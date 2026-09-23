@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acerca de | Alto al Fraude</title>
+  <meta name="description" content="Objetivo del proyecto Alto al Fraude, marco teórico sobre el fraude y la ingeniería social, tecnologías usadas, técnica de diseño (wireframe) y equipo de trabajo.">
+  <meta name="theme-color" content="#071a3d">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__in">
+      <a class="marca" href="../index.html">
+        <img src="../img/logo.svg" alt="" width="40" height="40">
+        <span>Alto al Fraude<small>Prevención y fraude</small></span>
+      </a>
+      <input type="checkbox" id="menu" class="menu-check" aria-label="Abrir o cerrar el menú de navegación">
+      <label for="menu" class="menu-btn"><span></span><span class="sr">Menú</span></label>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="acerca-de.html" aria-current="page">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero-pagina" aria-labelledby="titulo-pagina">
+      <div class="contenedor">
+        <h1 id="titulo-pagina">Acerca de este proyecto</h1>
+        <p>Un sitio hecho desde cero para explicar de forma clara cómo funcionan los fraudes y cómo protegerse de ellos.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor con-aside">
+        <div class="contenido-principal">
+
+          <article class="articulo" aria-labelledby="a-objetivo">
+            <h2 id="a-objetivo">Objetivo del sitio</h2>
+            <p>Alto al Fraude nació como el Parcial N.º 1 de Desarrollo Web de la Licenciatura en Ciberseguridad. El tema asignado fue <strong>prevención y fraude</strong>.</p>
+            <p>El objetivo es que cualquier persona, sin conocimientos técnicos, pueda reconocer las señales de un engaño, saber cómo detenerlo y conocer los pasos a seguir si ya fue víctima. Por eso el contenido se organiza en tres ideas: qué es el fraude, cómo se presenta y qué hacer.</p>
+          </article>
+
+          <article class="articulo" aria-labelledby="a-marco">
+            <h2 id="a-marco">El fraude en contexto: el triángulo de Cressey</h2>
+            <p>El criminólogo estadounidense Donald Cressey propuso, a mediados del siglo XX, que un fraude ocurre cuando coinciden tres factores. Este modelo, conocido como el <strong>triángulo del fraude</strong>, se sigue usando en auditoría y en prevención.</p>
+            <dl>
+              <dt>Presión</dt>
+              <dd>Una necesidad, casi siempre económica, que la persona percibe como imposible de resolver de otra forma.</dd>
+              <dt>Oportunidad</dt>
+              <dd>Una debilidad en los controles que permite engañar con poco riesgo de ser detectado.</dd>
+              <dt>Racionalización</dt>
+              <dd>Una justificación con la que quien comete el fraude se convence de que su conducta es aceptable.</dd>
+            </dl>
+            <p>Como usuarios y como organizaciones influimos sobre todo en la <strong>oportunidad</strong>: verificar, usar doble factor de autenticación y separar funciones son controles que la reducen.</p>
+          </article>
+
+          <article class="articulo" aria-labelledby="a-social">
+            <h2 id="a-social">Cómo actúa la ingeniería social</h2>
+            <p>Aunque cada estafa cambia de canal, el proceso suele seguir una secuencia parecida:</p>
+            <ol>
+              <li><strong>Investigación:</strong> el atacante reúne datos sobre la víctima en redes sociales, filtraciones o directorios.</li>
+              <li><strong>Contacto:</strong> se presenta como alguien de confianza, como un banco, un jefe o un servicio técnico.</li>
+              <li><strong>Manipulación:</strong> crea urgencia, miedo o una oportunidad irresistible para que la persona no piense con calma.</li>
+              <li><strong>Ejecución:</strong> obtiene la clave, el código o la transferencia que buscaba.</li>
+              <li><strong>Salida:</strong> desaparece o borra el rastro antes de que se descubra el engaño.</li>
+            </ol>
+            <p>Interrumpir cualquiera de estos pasos, sobre todo el tercero, hace fracasar el ataque.</p>
+          </article>
+
+          <article class="articulo" aria-labelledby="a-tec">
+            <h2 id="a-tec">Tecnologías y técnica de diseño</h2>
+            <p>El sitio está hecho únicamente con <strong>HTML5</strong> y <strong>CSS3</strong>, sin plantillas ni frameworks. Se usaron elementos semánticos (<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, <code>figure</code> y <code>footer</code>), variables CSS, Flexbox, Grid, gradientes, transiciones y <em>media queries</em> para que se vea bien en teléfono, tableta y computadora.</p>
+            <p>La técnica de diseño utilizada fue el <strong>wireframe</strong> de baja fidelidad: primero se bosquejó la estructura de cada página en escala de grises, sin color ni tipografía, para decidir dónde iría cada bloque antes de programar.</p>
+            <figure class="imagen">
+              <img src="../img/wireframe.svg" alt="Wireframe de las tres páginas del sitio: inicio, acerca de y contacto" width="1200" height="780" loading="lazy">
+              <figcaption>Wireframe de las tres páginas (técnica de diseño utilizada).</figcaption>
+            </figure>
+            <p>La estructura de carpetas del proyecto es la siguiente:</p>
+<pre><code>Garcia_Gonzalez/
+├── index.html
+├── html/
+│   ├── acerca-de.html
+│   └── contacto.html
+├── css/
+│   └── estilos.css
+├── img/        (logo, ilustraciones, iconos, wireframe)
+├── audio/
+└── video/</code></pre>
+          </article>
+
+          <article class="articulo" aria-labelledby="a-equipo">
+            <h2 id="a-equipo">Equipo de trabajo</h2>
+            <div class="equipo">
+              <article class="integrante">
+                <svg viewBox="0 0 56 56" role="img" aria-label="Avatar del integrante 1"><circle cx="28" cy="28" r="28" fill="#c9d6e8"/><circle cx="28" cy="21" r="9" fill="#0e2a5c"/><path d="M10 48c0-11 8-17 18-17s18 6 18 17a28 28 0 0 1-36 0z" fill="#0e2a5c"/></svg>
+                <div>
+                  <h3>Abel Garcia</h3>
+                  <p>Investigación del contenido y maquetación HTML5.</p>
+                </div>
+              </article>
+              <article class="integrante">
+                <svg viewBox="0 0 56 56" role="img" aria-label="Avatar del integrante 2"><circle cx="28" cy="28" r="28" fill="#c9d6e8"/><circle cx="28" cy="21" r="9" fill="#0e2a5c"/><path d="M10 48c0-11 8-17 18-17s18 6 18 17a28 28 0 0 1-36 0z" fill="#0e2a5c"/></svg>
+                <div>
+                  <h3>Genesis Gonzalez</h3>
+                  <p>Diseño visual, estilos CSS3 y recursos multimedia.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="columna-aside">
+          <aside class="aside aside--tinta" aria-labelledby="aside-ficha">
+            <h3 id="aside-ficha">Ficha del proyecto</h3>
+            <dl>
+              <dt>Universidad</dt><dd>Universidad Tecnológica de Panamá</dd>
+              <dt>Facultad</dt><dd>Ingeniería de Sistemas Computacionales</dd>
+              <dt>Carrera</dt><dd>Licenciatura en Ciberseguridad</dd>
+              <dt>Asignatura</dt><dd>Desarrollo Web, Parcial N.º 1</dd>
+              <dt>Facilitadora</dt><dd>Dra. Denis Cedeño</dd>
+              <dt>Grupo académico</dt><dd>1S3123</dd>
+              <dt>Equipo</dt><dd>#3</dd>
+              <dt>Fecha</dt><dd>21 de septiembre de 2026</dd>
+              <dt>Tema</dt><dd>Prevención y fraude</dd>
+            </dl>
+          </aside>
+
+          <aside class="aside" aria-labelledby="aside-glosario">
+            <h3 id="aside-glosario">Glosario mínimo</h3>
+            <dl>
+              <dt>Ingeniería social</dt><dd>Manipulación psicológica para que una persona entregue información o realice una acción.</dd>
+              <dt>OTP</dt><dd>Código de un solo uso que confirma una operación. Nunca se comparte.</dd>
+              <dt>Verificación en dos pasos</dt><dd>Segundo factor, como un código o una aplicación, además de la contraseña.</dd>
+              <dt>Spoofing</dt><dd>Falsificación del remitente o del número para aparentar ser otra persona.</dd>
+              <dt>Malware</dt><dd>Programa diseñado para dañar un equipo o robar información.</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__in">
+      <section aria-label="Sobre el sitio">
+        <a class="marca" href="../index.html">
+          <img src="../img/logo.svg" alt="" width="40" height="40">
+          <span>Alto al Fraude<small>Prevención y fraude</small></span>
+        </a>
+        <p>Sitio educativo para reconocer, evitar y reportar los fraudes más comunes.</p>
+      </section>
+      <nav aria-label="Mapa del sitio">
+        <h2 class="pie__t">Mapa del sitio</h2>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="acerca-de.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pie-rel">
+        <h2 class="pie__t" id="pie-rel">Sitios relacionados</h2>
+        <ul>
+          <li><a href="https://www.superbancos.gob.pa/" target="_blank" rel="noopener noreferrer">Superintendencia de Bancos de Panamá</a></li>
+          <li><a href="https://www.osi.es/" target="_blank" rel="noopener noreferrer">Oficina de Seguridad del Internauta (INCIBE)</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="pie-redes">
+        <h2 class="pie__t" id="pie-redes">Redes sociales</h2>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (se abre en una pestaña nueva)"><img src="../img/icon-facebook.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)"><img src="../img/icon-instagram.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (se abre en una pestaña nueva)"><img src="../img/icon-x.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (se abre en una pestaña nueva)"><img src="../img/icon-youtube.svg" alt="" width="22" height="22"></a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie__legal">© 2026 Alto al Fraude. Proyecto académico de Desarrollo Web (Parcial N.º 1), Universidad Tecnológica de Panamá, Facultad de Ingeniería de Sistemas Computacionales.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="t d">
+  <title id="t">Skimming</title><desc id="d">Una tarjeta entrando en un cajero automático que tiene un lector falso en rojo superpuesto sobre la ranura.</desc>
+  <rect width="400" height="260" fill="#DCE6F2"/>
+  <g fill="none" stroke="#C3D3E8" stroke-width="2"><circle cx="350" cy="30" r="40"/><circle cx="350" cy="30" r="62"/><circle cx="350" cy="30" r="84"/><circle cx="40" cy="240" r="40"/><circle cx="40" cy="240" r="62"/></g>
+
+  <rect x="40" y="128" width="320" height="100" rx="12" fill="#0E2A5C"/>
+  <rect x="90" y="166" width="220" height="16" rx="8" fill="#071A3D"/>
+  <rect x="74" y="148" width="252" height="54" rx="10" fill="#C8102E" opacity=".92"/>
+  <rect x="98" y="168" width="204" height="14" rx="7" fill="#5A0A19"/>
+  <g transform="rotate(-8 200 96)">
+    <rect x="140" y="52" width="120" height="76" rx="8" fill="#fff" stroke="#0E2A5C" stroke-width="4"/>
+    <rect x="140" y="68" width="120" height="14" fill="#0E2A5C"/>
+    <rect x="152" y="96" width="26" height="20" rx="4" fill="#E8A317"/>
+  </g>
+  <circle cx="338" cy="112" r="9" fill="#C8102E"/><circle cx="338" cy="112" r="3.5" fill="#fff"/>
+</svg>

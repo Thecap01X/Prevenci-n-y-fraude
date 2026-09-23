@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alto al Fraude | Prevención y fraude: cómo detectarlo y qué hacer</title>
+  <meta name="description" content="Guía educativa sobre prevención y fraude: phishing, vishing, smishing, skimming, suplantación de identidad y estafas en compras en línea. Aprende a detectarlos y qué hacer si eres víctima.">
+  <meta name="theme-color" content="#071a3d">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__in">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Alto al Fraude<small>Prevención y fraude</small></span>
+      </a>
+      <input type="checkbox" id="menu" class="menu-check" aria-label="Abrir o cerrar el menú de navegación">
+      <label for="menu" class="menu-btn"><span></span><span class="sr">Menú</span></label>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="html/acerca-de.html">Acerca de</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- PORTADA -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero__in">
+        <div class="hero__texto">
+          <h1 id="titulo-hero">Detecta el fraude antes de que te cueste dinero</h1>
+          <p class="hero__lead">Muchos fraudes no rompen la seguridad del banco: engañan a la persona para que entregue sus datos por su cuenta. Aquí verás cómo se ven los engaños más comunes, cómo frenarlos y qué hacer si ya caíste.</p>
+          <p class="acciones">
+            <a class="btn btn--primario" href="#tipos">Conocer los tipos de fraude</a>
+            <a class="btn btn--linea" href="#victima">Ya caí, ¿qué hago?</a>
+          </p>
+        </div>
+
+        <figure class="demo">
+          <div class="telefono">
+            <div class="telefono__pantalla">
+              <div class="telefono__barra"><span>9:41</span><span>Mensajes</span></div>
+              <p class="sms__de">De: <mark class="alerta" data-n="1">+507 6000-0000</mark></p>
+              <p class="sms__burbuja">BANCO EJEMPLO: <mark class="alerta" data-n="2">su cuenta será bloqueada hoy</mark>. Confirme sus datos en <mark class="alerta" data-n="3">banco-verifica.ejemplo/acceso</mark></p>
+            </div>
+            <span class="sello" aria-hidden="true">Sospechoso</span>
+          </div>
+          <figcaption>
+            <p>Un mensaje falso, tres señales:</p>
+            <ol>
+              <li>Número desconocido que afirma representar a una entidad financiera.</li>
+              <li>Amenaza y urgencia: "hoy".</li>
+              <li>Enlace que no es la dirección oficial de la entidad.</li>
+            </ol>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- QUÉ ES EL FRAUDE -->
+    <section class="seccion seccion--blanca" aria-labelledby="titulo-que-es">
+      <div class="contenedor con-aside">
+        <article>
+          <h2 id="titulo-que-es">¿Qué es el fraude y por qué funciona?</h2>
+          <p>El fraude es un engaño deliberado para obtener un beneficio, casi siempre dinero, a costa de otra persona. En el entorno digital, el engaño llega por correo, llamadas, mensajes y páginas web que imitan a empresas reales.</p>
+          <p>La mayoría de estos ataques usa <strong>ingeniería social</strong>: manipulación psicológica que aprovecha emociones como el miedo, la prisa, la curiosidad o la confianza en una autoridad. Por eso la defensa no es solo tecnológica. También consiste en frenar un momento y verificar antes de actuar.</p>
+          <p class="definicion"><strong>Regla básica:</strong> ninguna entidad financiera legítima te pedirá tu contraseña, tu PIN ni el código de un solo uso por llamada, SMS o correo electrónico.</p>
+          <p>Los estafadores también cambian de canal con rapidez. Un mismo fraude puede empezar con un correo, seguir con una llamada de "seguimiento" y terminar con una transferencia. Conocer cada modalidad te ayuda a reconocer el patrón.</p>
+        </article>
+
+        <div class="columna-aside">
+          <aside class="aside aside--tinta" aria-labelledby="aside-pasos">
+            <h3 id="aside-pasos">Ante cualquier mensaje raro</h3>
+            <ol class="regla">
+              <li><span><strong>Detente.</strong> No respondas ni toques enlaces.</span></li>
+              <li><span><strong>Verifica</strong> por un canal oficial que tú elijas.</span></li>
+              <li><span><strong>Decide</strong> con calma. Si dudas, no lo hagas.</span></li>
+            </ol>
+          </aside>
+          <aside class="aside" aria-labelledby="aside-senales">
+            <h3 id="aside-senales">Señales de alerta comunes</h3>
+            <ul>
+              <li>Urgencia o amenaza: "actúe hoy o perderá su cuenta".</li>
+              <li>Premios o ayudas que no solicitaste.</li>
+              <li>Piden claves, PIN o códigos por mensaje o llamada.</li>
+              <li>Remitente o enlace que no coincide con el sitio oficial.</li>
+              <li>Exigen pagar por transferencia, tarjetas de regalo o criptomonedas.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOS DE FRAUDE -->
+    <section class="seccion" id="tipos" aria-labelledby="titulo-tipos">
+      <div class="contenedor">
+        <div class="intro">
+          <h2 id="titulo-tipos">Seis fraudes que debes reconocer</h2>
+          <p>Cada modalidad usa un canal distinto, pero todas buscan lo mismo: que hagas algo que no harías si tuvieras toda la información.</p>
+        </div>
+
+        <div class="fichas">
+          <article class="ficha">
+            <img src="img/phishing.svg" alt="Sobre de correo con una alerta y un anzuelo colgando" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Phishing</h3>
+              <p>Correos que imitan a un banco, una tienda o una institución para llevarte a una página falsa donde entregas tus datos, o para que descargues un archivo dañino.</p>
+              <p class="senal"><strong>Señal:</strong> el dominio del remitente no coincide con el oficial, hay faltas de ortografía o adjuntos inesperados.</p>
+              <p class="defensa"><strong>Defensa:</strong> entra escribiendo tú la dirección oficial, no desde el enlace del correo.</p>
+            </div>
+          </article>
+
+          <article class="ficha">
+            <img src="img/vishing.svg" alt="Teléfono recibiendo una llamada de un número desconocido" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Vishing</h3>
+              <p>Fraude por llamada. Quien llama dice ser del banco o de soporte técnico y puede falsear el número que aparece en tu pantalla para inspirar confianza.</p>
+              <p class="senal"><strong>Señal:</strong> te presionan para actuar de inmediato, te piden códigos o que instales una aplicación de acceso remoto.</p>
+              <p class="defensa"><strong>Defensa:</strong> cuelga y llama tú al número impreso en tu tarjeta.</p>
+            </div>
+          </article>
+
+          <article class="ficha">
+            <img src="img/smishing.svg" alt="Teléfono con un mensaje de texto que contiene un enlace sospechoso" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Smishing</h3>
+              <p>Es el phishing por SMS o mensajería instantánea. Los pretextos habituales son un paquete retenido, una cuenta bloqueada, una multa o un premio.</p>
+              <p class="senal"><strong>Señal:</strong> mensaje inesperado con un enlace acortado y un plazo corto para responder.</p>
+              <p class="defensa"><strong>Defensa:</strong> no abras enlaces de remitentes desconocidos; usa la aplicación oficial.</p>
+            </div>
+          </article>
+
+          <article class="ficha">
+            <img src="img/skimming.svg" alt="Tarjeta entrando en un cajero con un lector falso superpuesto" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Skimming</h3>
+              <p>Copia de los datos de tu tarjeta con un dispositivo oculto en cajeros o terminales de pago. A veces se acompaña de una cámara o un teclado falso para capturar el PIN.</p>
+              <p class="senal"><strong>Señal:</strong> ranura floja o con piezas sobrepuestas, teclado más grueso de lo normal.</p>
+              <p class="defensa"><strong>Defensa:</strong> cubre el teclado al digitar, prefiere cajeros dentro de sucursales y activa alertas de consumo.</p>
+            </div>
+          </article>
+
+          <article class="ficha">
+            <img src="img/identidad.svg" alt="Documento de identidad con una copia roja desplazada detrás" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Suplantación de identidad</h3>
+              <p>Alguien usa tus datos personales, como cédula, fotos o datos bancarios, para abrir cuentas, pedir créditos o hacer compras a tu nombre.</p>
+              <p class="senal"><strong>Señal:</strong> cobros, correos o llamadas de deudas y cuentas que nunca abriste.</p>
+              <p class="defensa"><strong>Defensa:</strong> comparte pocos datos, destruye documentos que ya no uses y revisa tus estados de cuenta.</p>
+            </div>
+          </article>
+
+          <article class="ficha">
+            <img src="img/compras.svg" alt="Ventana de navegador con candado abierto y una oferta con noventa por ciento de descuento" width="400" height="260" loading="lazy">
+            <div class="ficha__cuerpo">
+              <h3>Compras en línea falsas</h3>
+              <p>Tiendas y anuncios que ofrecen precios irreales, cobran y nunca envían el producto, o roban los datos de tu tarjeta durante el pago.</p>
+              <p class="senal"><strong>Señal:</strong> descuentos exagerados, sin datos de contacto y solo aceptan transferencias. El candado del navegador solo indica conexión cifrada, no que el sitio sea honesto.</p>
+              <p class="defensa"><strong>Defensa:</strong> compra en sitios que conoces y paga con medios que permitan reclamar.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="tabla-scroll">
+          <table>
+            <caption>Comparativo rápido de fraudes</caption>
+            <thead>
+              <tr>
+                <th scope="col">Fraude</th>
+                <th scope="col">Por dónde llega</th>
+                <th scope="col">Qué busca</th>
+                <th scope="col">Tu mejor defensa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Phishing</th><td>Correo electrónico</td><td>Tus credenciales o que instales malware</td><td>Entrar por la dirección oficial, no por el enlace</td></tr>
+              <tr><th scope="row">Vishing</th><td>Llamada telefónica</td><td>Claves, códigos y transferencias</td><td>Colgar y llamar al número oficial</td></tr>
+              <tr><th scope="row">Smishing</th><td>SMS o WhatsApp</td><td>Que toques un enlace malicioso</td><td>No abrir enlaces de desconocidos</td></tr>
+              <tr><th scope="row">Skimming</th><td>Cajeros y terminales de pago</td><td>Copiar los datos de tu tarjeta</td><td>Revisar el lector, cubrir el teclado, activar alertas</td></tr>
+              <tr><th scope="row">Suplantación de identidad</th><td>Datos personales filtrados o publicados</td><td>Abrir cuentas o créditos a tu nombre</td><td>Compartir pocos datos y revisar estados de cuenta</td></tr>
+              <tr><th scope="row">Compras en línea falsas</th><td>Tiendas falsas y anuncios</td><td>Tu pago y los datos de tu tarjeta</td><td>Comprar en sitios confiables con pago protegido</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- HÁBITOS -->
+    <section class="seccion seccion--blanca" aria-labelledby="titulo-habitos">
+      <div class="contenedor con-aside">
+        <article>
+          <h2 id="titulo-habitos">Diez hábitos que reducen el riesgo</h2>
+          <ul class="habitos">
+            <li>Activa la verificación en dos pasos en tu correo, redes sociales y banca en línea.</li>
+            <li>Usa contraseñas largas y distintas para cada servicio; un gestor de contraseñas ayuda a manejarlas.</li>
+            <li>No compartas contraseñas, PIN ni códigos de un solo uso con nadie.</li>
+            <li>Escribe tú mismo la dirección del banco o usa su aplicación oficial.</li>
+            <li>Mantén actualizados el sistema operativo, el navegador y el antivirus.</li>
+            <li>Activa alertas de transacciones en tus tarjetas y cuentas.</li>
+            <li>Revisa tus estados de cuenta con regularidad y reporta cargos que no reconozcas.</li>
+            <li>Desconfía de ofertas demasiado buenas, premios inesperados y presiones de tiempo.</li>
+            <li>Evita entrar a la banca en línea desde redes Wi-Fi públicas.</li>
+            <li>Cubre el teclado al digitar tu PIN y no pierdas de vista tu tarjeta al pagar.</li>
+          </ul>
+        </article>
+
+        <div class="columna-aside">
+          <aside class="aside aside--verde" aria-labelledby="aside-rel">
+            <h3 id="aside-rel">Sitios relacionados</h3>
+            <ul>
+              <li><a href="https://www.superbancos.gob.pa/" target="_blank" rel="noopener noreferrer">Superintendencia de Bancos de Panamá</a>: entidad que regula y supervisa el sistema bancario panameño.</li>
+              <li><a href="https://www.osi.es/" target="_blank" rel="noopener noreferrer">Oficina de Seguridad del Internauta</a>: avisos y consejos de ciberseguridad para ciudadanos, en español.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section class="seccion seccion--tinta" id="multimedia" aria-labelledby="titulo-medios">
+      <div class="contenedor">
+        <div class="intro">
+          <h2 id="titulo-medios">Míralo y escúchalo</h2>
+          <p>Un video corto con cinco hábitos y una cápsula de audio para recordar qué hacer cuando alguien te apura.</p>
+        </div>
+        <div class="medios">
+          <figure>
+            <video controls preload="metadata" poster="img/video-poster.jpg" width="1280" height="720">
+              <source src="video/cinco-habitos.mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video. Los cinco hábitos son: desconfiar de la urgencia, no compartir claves ni códigos, verificar el enlace, activar la verificación en dos pasos y colgar para llamar tú al número oficial.
+            </video>
+            <figcaption>Video: cinco hábitos para frenar una estafa (unos 35 segundos, sin sonido; el texto va en pantalla).</figcaption>
+          </figure>
+
+          <article class="tarjeta-audio" aria-labelledby="titulo-audio">
+            <h3 id="titulo-audio">Cápsula de audio: frena una estafa</h3>
+            <audio controls preload="none">
+              <source src="audio/capsula-alerta.mp3" type="audio/mpeg">
+              Tu navegador no puede reproducir audio.
+            </audio>
+            <details>
+              <summary>Leer la transcripción</summary>
+              <blockquote>
+                <p>Si un mensaje te apura, detente. Ninguna entidad financiera seria te pedirá tu clave ni un código por llamada o mensaje. Cuelga, busca el número oficial y llama tú. Si tienes dudas, no toques el enlace.</p>
+              </blockquote>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SI ERES VÍCTIMA -->
+    <section class="seccion seccion--blanca" id="victima" aria-labelledby="titulo-victima">
+      <div class="contenedor con-aside">
+        <article>
+          <h2 id="titulo-victima">Si ya caíste: qué hacer, en este orden</h2>
+          <ol class="pasos">
+            <li><strong>Llama a tu banco o emisor de la tarjeta.</strong> Reporta lo ocurrido y pide bloquear tarjetas y accesos. Cuanto antes lo hagas, más opciones habrá de frenar o reclamar movimientos.</li>
+            <li><strong>Cambia tus contraseñas.</strong> Empieza por el correo y la banca en línea, y activa la verificación en dos pasos. Hazlo desde un dispositivo de confianza.</li>
+            <li><strong>Reúne la evidencia.</strong> Capturas de pantalla, mensajes, números de teléfono, enlaces y comprobantes de transferencia. No borres la conversación.</li>
+            <li><strong>Presenta la denuncia</strong> ante el Ministerio Público, con la evidencia que reuniste.</li>
+            <li><strong>Vigila y avisa.</strong> Revisa tus estados de cuenta las semanas siguientes y avisa a tus contactos si tu cuenta se usó para engañar a otros.</li>
+          </ol>
+        </article>
+
+        <div class="columna-aside">
+          <aside class="aside aside--ambar" aria-labelledby="aside-evidencia">
+            <h3 id="aside-evidencia">Evidencia que conviene guardar</h3>
+            <ul>
+              <li>Fecha y hora del contacto.</li>
+              <li>Número, correo o perfil desde el que escribieron.</li>
+              <li>Enlaces y capturas de pantalla.</li>
+              <li>Cuenta de destino y comprobantes de pago.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="banda" aria-labelledby="titulo-banda">
+      <div class="banda__in">
+        <p id="titulo-banda">¿Recibiste un mensaje o una llamada que te hace dudar?</p>
+        <a class="btn btn--claro" href="html/contacto.html">Escríbenos tu caso</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="pie__in">
+      <section aria-label="Sobre el sitio">
+        <a class="marca" href="index.html">
+          <img src="img/logo.svg" alt="" width="40" height="40">
+          <span>Alto al Fraude<small>Prevención y fraude</small></span>
+        </a>
+        <p>Sitio educativo para reconocer, evitar y reportar los fraudes más comunes.</p>
+      </section>
+      <nav aria-label="Mapa del sitio">
+        <h2 class="pie__t">Mapa del sitio</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="html/acerca-de.html">Acerca de</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pie-rel">
+        <h2 class="pie__t" id="pie-rel">Sitios relacionados</h2>
+        <ul>
+          <li><a href="https://www.superbancos.gob.pa/" target="_blank" rel="noopener noreferrer">Superintendencia de Bancos de Panamá</a></li>
+          <li><a href="https://www.osi.es/" target="_blank" rel="noopener noreferrer">Oficina de Seguridad del Internauta (INCIBE)</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="pie-redes">
+        <h2 class="pie__t" id="pie-redes">Redes sociales</h2>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (se abre en una pestaña nueva)"><img src="img/icon-facebook.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)"><img src="img/icon-instagram.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (se abre en una pestaña nueva)"><img src="img/icon-x.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (se abre en una pestaña nueva)"><img src="img/icon-youtube.svg" alt="" width="22" height="22"></a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie__legal">© 2026 Alto al Fraude. Proyecto académico de Desarrollo Web (Parcial N.º 1), Universidad Tecnológica de Panamá, Facultad de Ingeniería de Sistemas Computacionales.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="t d">
+  <title id="t">Phishing</title><desc id="d">Un sobre de correo electrónico con una alerta y un anzuelo colgando a su lado.</desc>
+  <rect width="400" height="260" fill="#DCE6F2"/>
+  <g fill="none" stroke="#C3D3E8" stroke-width="2"><circle cx="350" cy="30" r="40"/><circle cx="350" cy="30" r="62"/><circle cx="350" cy="30" r="84"/><circle cx="40" cy="240" r="40"/><circle cx="40" cy="240" r="62"/></g>
+
+  <rect x="60" y="92" width="220" height="140" rx="6" fill="#fff" stroke="#0E2A5C" stroke-width="4"/>
+  <path d="M60 98 L170 176 L280 98" fill="none" stroke="#0E2A5C" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M60 226 L132 160 M280 226 L208 160" stroke="#0E2A5C" stroke-width="3" opacity=".35" fill="none"/>
+  <path d="M310 14 V118 a27 27 0 0 0 54 0 V104" fill="none" stroke="#C8102E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M364 104 l-11 13" stroke="#C8102E" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="60" cy="92" r="20" fill="#C8102E"/><rect x="57" y="81" width="6" height="14" rx="3" fill="#fff"/><circle cx="60" cy="102" r="3.5" fill="#fff"/>
+</svg>

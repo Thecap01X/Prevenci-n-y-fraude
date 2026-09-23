@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Alto al Fraude</title>
+  <meta name="description" content="Formulario de contacto de Alto al Fraude: cuéntanos tu caso, haz una consulta o envía una sugerencia sobre el sitio.">
+  <meta name="theme-color" content="#071a3d">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__in">
+      <a class="marca" href="../index.html">
+        <img src="../img/logo.svg" alt="" width="40" height="40">
+        <span>Alto al Fraude<small>Prevención y fraude</small></span>
+      </a>
+      <input type="checkbox" id="menu" class="menu-check" aria-label="Abrir o cerrar el menú de navegación">
+      <label for="menu" class="menu-btn"><span></span><span class="sr">Menú</span></label>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="acerca-de.html">Acerca de</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero-pagina" aria-labelledby="titulo-pagina">
+      <div class="contenedor">
+        <h1 id="titulo-pagina">Contacto</h1>
+        <p>¿Recibiste algo sospechoso o tienes una sugerencia para el sitio? Escríbenos.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor con-aside">
+        <div class="contenido-principal">
+
+          <article class="formulario" aria-labelledby="titulo-form">
+            <h2 id="titulo-form">Formulario de contacto</h2>
+            <p class="aviso"><strong>Importante:</strong> no escribas aquí contraseñas, PIN, números completos de tarjeta ni códigos de verificación.</p>
+
+            <form id="form-contacto" method="post" action="#" novalidate>
+              <div class="fila-2">
+                <div class="campo">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" autocomplete="name" placeholder="Ej.: María Pérez">
+                </div>
+                <div class="campo">
+                  <label for="correo">Correo electrónico</label>
+                  <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="nombre@correo.com">
+                </div>
+              </div>
+
+              <div class="fila-2">
+                <div class="campo">
+                  <label for="telefono">Teléfono (opcional)</label>
+                  <input type="tel" id="telefono" name="telefono" pattern="[0-9+\-\s]{7,15}" autocomplete="tel" placeholder="6000-0000">
+                  <span class="ayuda">Solo números, espacios o guiones.</span>
+                </div>
+                <div class="campo">
+                  <label for="fecha">Fecha del incidente (opcional)</label>
+                  <input type="date" id="fecha" name="fecha">
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="consulta">Tipo de consulta</label>
+                <select id="consulta" name="consulta" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>Quiero reportar un mensaje o llamada sospechosa</option>
+                  <option>Necesito orientación sobre qué hacer</option>
+                  <option>Tengo una sugerencia sobre el sitio</option>
+                  <option>Otro tema</option>
+                </select>
+              </div>
+
+              <fieldset class="campo">
+                <legend>¿Por qué canal te contactaron? (opcional)</legend>
+                <div class="opciones">
+                  <label><input type="radio" name="canal" value="correo"> Correo</label>
+                  <label><input type="radio" name="canal" value="llamada"> Llamada</label>
+                  <label><input type="radio" name="canal" value="mensaje"> SMS o WhatsApp</label>
+                  <label><input type="radio" name="canal" value="redes"> Redes sociales</label>
+                  <label><input type="radio" name="canal" value="web"> Sitio web</label>
+                </div>
+              </fieldset>
+
+              <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required minlength="20" maxlength="1000" placeholder="Cuéntanos qué pasó, con el mayor detalle posible."></textarea>
+                <span class="ayuda">Mínimo 20 caracteres.</span>
+              </div>
+
+              <div class="acepto">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Entiendo que este sitio es educativo y que, para bloquear tarjetas o reclamar movimientos, debo contactar directamente a mi banco.</label>
+              </div>
+
+              <div class="botones">
+                <button type="submit" class="btn btn--primario">Enviar mensaje</button>
+                <button type="reset" class="btn btn--linea">Limpiar formulario</button>
+              </div>
+              <p id="estado" class="estado" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="articulo" style="margin-top:1.6rem" aria-labelledby="titulo-faq">
+            <h2 id="titulo-faq">Preguntas frecuentes</h2>
+            <details class="faq">
+              <summary>¿Pueden ayudarme a recuperar mi dinero?</summary>
+              <p>No. Este es un proyecto educativo y no gestiona reclamos. Si perdiste dinero, contacta de inmediato a tu banco y presenta la denuncia ante el Ministerio Público.</p>
+            </details>
+            <details class="faq">
+              <summary>¿Cómo sé si un correo es falso?</summary>
+              <p>Revisa el dominio real del remitente, pasa el cursor sobre el enlace sin tocarlo para ver la dirección de destino y desconfía de la urgencia o de las amenazas.</p>
+            </details>
+            <details class="faq">
+              <summary>¿El candado del navegador garantiza que un sitio es seguro?</summary>
+              <p>No. El candado indica que la conexión está cifrada, pero los sitios falsos también pueden tenerlo. Lo importante es que la dirección sea la oficial.</p>
+            </details>
+          </article>
+
+        </div>
+
+        <div class="columna-aside">
+          <aside class="aside aside--ambar" aria-labelledby="aside-antes">
+            <h3 id="aside-antes">Antes de escribirnos</h3>
+            <ul>
+              <li>Si ya hubo un cobro no reconocido, llama primero a tu banco.</li>
+              <li>Guarda capturas del mensaje y no borres la conversación.</li>
+              <li>No respondas ni hagas clic en el enlace sospechoso.</li>
+            </ul>
+          </aside>
+          <aside class="aside aside--tinta" aria-labelledby="aside-canales">
+            <h3 id="aside-canales">Otros canales</h3>
+            <dl>
+              <dt>Canal de contacto</dt><dd>Formulario académico de demostración.</dd>
+              <dt>Redes sociales</dt><dd>Encuentra los enlaces en el pie de página.</dd>
+              <dt>Horario de respuesta</dt><dd>Lunes a viernes, en horario de clases.</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /* Validación con la API de HTML5 y mensaje de confirmación.
+       Nota: sin un servidor (o un servicio como Formspree) el formulario no envía datos:
+       esto simula el envío para la demostración del parcial. */
+    (function () {
+      var form = document.getElementById('form-contacto');
+      var estado = document.getElementById('estado');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          estado.className = 'estado';
+          estado.textContent = 'Revisa los campos marcados en rojo antes de enviar.';
+          form.reportValidity();
+          return;
+        }
+        var nombre = form.nombre.value.trim().split(' ')[0];
+        form.reset(); /* primero se limpia; el evento reset borra el estado */
+        estado.className = 'estado estado--ok';
+        estado.textContent = 'Gracias, ' + nombre + '. Recibimos tu mensaje y lo revisaremos pronto.';
+      });
+      form.addEventListener('reset', function () {
+        estado.className = 'estado';
+        estado.textContent = '';
+      });
+    })();
+  </script>
+
+  <footer class="pie">
+    <div class="pie__in">
+      <section aria-label="Sobre el sitio">
+        <a class="marca" href="../index.html">
+          <img src="../img/logo.svg" alt="" width="40" height="40">
+          <span>Alto al Fraude<small>Prevención y fraude</small></span>
+        </a>
+        <p>Sitio educativo para reconocer, evitar y reportar los fraudes más comunes.</p>
+      </section>
+      <nav aria-label="Mapa del sitio">
+        <h2 class="pie__t">Mapa del sitio</h2>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="acerca-de.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pie-rel">
+        <h2 class="pie__t" id="pie-rel">Sitios relacionados</h2>
+        <ul>
+          <li><a href="https://www.superbancos.gob.pa/" target="_blank" rel="noopener noreferrer">Superintendencia de Bancos de Panamá</a></li>
+          <li><a href="https://www.osi.es/" target="_blank" rel="noopener noreferrer">Oficina de Seguridad del Internauta (INCIBE)</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="pie-redes">
+        <h2 class="pie__t" id="pie-redes">Redes sociales</h2>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (se abre en una pestaña nueva)"><img src="../img/icon-facebook.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)"><img src="../img/icon-instagram.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (se abre en una pestaña nueva)"><img src="../img/icon-x.svg" alt="" width="22" height="22"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (se abre en una pestaña nueva)"><img src="../img/icon-youtube.svg" alt="" width="22" height="22"></a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie__legal">© 2026 Alto al Fraude. Proyecto académico de Desarrollo Web (Parcial N.º 1), Universidad Tecnológica de Panamá, Facultad de Ingeniería de Sistemas Computacionales.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="t d">
+  <title id="t">Smishing</title><desc id="d">Un teléfono con un mensaje de texto que contiene un enlace sospechoso y una bandera roja de advertencia.</desc>
+  <rect width="400" height="260" fill="#DCE6F2"/>
+  <g fill="none" stroke="#C3D3E8" stroke-width="2"><circle cx="350" cy="30" r="40"/><circle cx="350" cy="30" r="62"/><circle cx="350" cy="30" r="84"/><circle cx="40" cy="240" r="40"/><circle cx="40" cy="240" r="62"/></g>
+
+  <rect x="140" y="22" width="120" height="216" rx="20" fill="#fff" stroke="#0E2A5C" stroke-width="4"/>
+  <rect x="172" y="34" width="56" height="8" rx="4" fill="#C9D6E8"/>
+  <rect x="156" y="70" width="90" height="76" rx="10" fill="#E4EAF3"/>
+  <polygon points="168,146 162,164 186,146" fill="#E4EAF3"/>
+  <rect x="166" y="82" width="70" height="6" rx="3" fill="#9FB0C8"/><rect x="166" y="94" width="50" height="6" rx="3" fill="#9FB0C8"/>
+  <rect x="166" y="112" width="70" height="16" rx="8" fill="#C8102E"/><rect x="174" y="118" width="54" height="4" rx="2" fill="#fff"/>
+  <rect x="156" y="182" width="88" height="34" rx="17" fill="#C9D6E8"/>
+  <path d="M300 66 V132" stroke="#0E2A5C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 66 H346 l-11 15 l11 15 H300z" fill="#C8102E"/>
+</svg>
